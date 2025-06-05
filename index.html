@@ -1,81 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mobius Performance</title>
-    <link rel="icon" type="image/png" href="image.png">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <h1>Mobius Performance</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <section id="about">
-            <article>
-                <h2>About Our Performance Shop</h2>
-                <p>Welcome to the <strong>ultimate</strong> car performance destination!</p>
-                <p>We are <em>passionate</em> about turning regular cars into street beasts.</p>
-            </article>
-        </section>
-
-        <section id="services">
-            <article>
-                <h2>Performance Services</h2>
-                <ul>
-                    <li>Engine Tuning & ECU Remapping</li>
-                    <li>Turbo & Supercharger Installation</li>
-                    <li>Nitrous Oxide Systems</li>
-                    <li>Custom Exhaust Systems</li>
-                </ul>
-            </article>
-
-            <article>
-                <h2>Build Process</h2>
-                <ol>
-                    <li>Initial Consultation & Dyno Test</li>
-                    <li>Custom Performance Plan</li>
-                    <li>Professional Installation</li>
-                    <li>Final Dyno Tuning & Testing</li>
-                </ol>
-            </article>
-        </section>
-
-        <section>
-            <article>
-                <h2>Our Featured Build</h2>
-                <div class="team-container">
-                    <p>Check out our <strong>monster</strong> 1500+ WHP build:</p>
-                    <br>
-                    <img src="img.jpg" alt="High-Performance Car">
-                    <br>
-                    <p>Built with <em>precision</em> and power in mind.</p>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Student Registration</title>
+    </head>
+    <body>
+        <div class="card">
+            <h1>Student Registration</h1>
+            <p class="subtitle"> Please fill out all required fills to complete your registration</p>
+            <form action="#" method="POST">
+                <div class="two-column">
+                    <div class="form-group">
+                        <label for="firstName"> First name<span class="required">*</span></label>
+                        <input type="text" name="firstName" id="firstName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName"> last name<span class="required">*</span></label>
+                        <input type="text" name="lastName" id="lastName" required>
+                    </div>
+                    <div class="form-group span-full">
+                        <label for="email"> Email<span class="required">*</span></label>
+                        <input type="text" name="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone"> Phone<span class="required">*</span></label>
+                        <input type="tel" name="phone" id="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="dob"> Date of Birth<span class="required">*</span></label>
+                        <input type="text" name="dob" id="dob" required>
+                    </div>
+                    <div class="form-group span-full">
+                        <label for="program"> Program of Study<span class="required">*</span></label>
+                        <select id="program" name="program" required>
+                            <option value="">Select your program</option>
+                            <option value="computer-science">Computer Science</option>
+                            <option value="engineering">Engineering</option>
+                            <option value="business">Business Administration</option>
+                            <option value="arts">Liberal Arts</option>
+                            <option value="sciences">Natural Sciences</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group span-full">
+                        <label>Year Level <span class="required">*</span></label>
+                        <div class="radio-group">
+                            <label>
+                                <input type="radio" name="yearLevel" value="freshmen" required>
+                                <span class="radio-label">freshmen</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="yearLevel" value="Sophomore" required>
+                                <span class="radio-label">Sophomore</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="yearLevel" value="junior" required>
+                                <span class="radio-label">junior</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="yearLevel" value="senior" required>
+                                <span class="radio-label">senior</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group span-full">
+                        <label>Interests (Select all that apply)</label>
+                        <div class="checkbox-grid">
+                            <label>
+                                <input type="checkbox" name="interests" value="sports" />
+                                <span class="checkbox-label">Sports &amp; Recreation</span>
+                            </label>
+                            <label>
+                                <input type="checkbox" name="interests" value="music" />
+                                <span class="checkbox-label">Music &amp; Arts</span>
+                            </label>
+                            <label>
+                                <input type="checkbox" name="interests" value="technology" />
+                                <span class="checkbox-label">Technology</span>
+                            </label>
+                            <label>
+                                <input type="checkbox" name="interests" value="volunteering" />
+                                <span class="checkbox-label">Volunteering</span>
+                            </label>
+                            <label>
+                                <input type="checkbox" name="interests" value="reading" />
+                                <span class="checkbox-label">Reading &amp; Writing</span>
+                            </label>
+                            <label>
+                                <input type="checkbox" name="interests" value="travel" />
+                                <span class="checkbox-label">Travel &amp; Culture</span>
+                            </label>
+                        </div>
+                    </div>
                 </div>
-            </article>
-        </section>
-
-        <section>
-            <article>
-                <h2>Latest News</h2>
-                <p>We just broke the 1/4 mile record with our latest build!</p>
-            </article>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2024 Mobius Performance. All rights reserved.</p>
-        <address>
-            Contact us at: <a href="mailto:info@fastperformance.com">info@fastperformance.com</a>
-        </address>
-    </footer>
-</body>
+            </form>
+        </div>
+    </body>
 </html>
